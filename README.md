@@ -15,4 +15,4 @@ Clone the repository and install dependencies:
 git clone https://github.com/ciaratreanor/EaglesPath.git
 cd EaglesPath
 pip install -r requirements.txt
-
+python EaglesPath.py
