@@ -10,9 +10,7 @@ Built with **Flask** + **pygame** (two separate versions), styled with a crimson
 
 - Python 3.13+
 
-## Web Version
-
-## Installation
+## Web Version Installation
 
 ### Mac / Linux
 ```bash
@@ -32,17 +30,20 @@ The app will automatically open in your browser. No need to copy any URLs.
 
 ---
 
-## pygame Version
+## pygame Version Installation
 
-## Installation
-
-Clone the repository and install dependencies:
-
+### Mac / Linux
 ```bash
 git clone https://github.com/ciaratreanor/EaglesPath.git
 cd EaglesPath
-pip install -r requirements.txt
-python EaglesPath.py
+./run.sh
+```
+
+### Windows
+```bat
+git clone https://github.com/ciaratreanor/EaglesPath.git
+cd EaglesPath
+run.bat
 ```
 
 The game window will open automatically.

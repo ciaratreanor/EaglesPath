@@ -7,4 +7,4 @@ fi
 
 source venv/bin/activate
 pip install pygame --quiet
-python EaglesPath.py
+python app.py
