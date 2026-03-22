@@ -32,18 +32,17 @@ The app will automatically open in your browser. No need to copy any URLs.
 
 ## pygame Version Installation
 
+
 ### Mac / Linux
 ```bash
 git clone https://github.com/ciaratreanor/EaglesPath.git
-cd EaglesPath
+cd EaglesPath/pygame_version
 ./run.sh
 ```
 
 ### Windows
 ```bat
 git clone https://github.com/ciaratreanor/EaglesPath.git
-cd EaglesPath
+cd EaglesPath\pygame_version
 run.bat
 ```
-
-The game window will open automatically.
