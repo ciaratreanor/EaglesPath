@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}Results — Eagle's Path{% endblock %}
+{% block content %}
+
+<div class="results-page">
+
+  <!-- Hero banner -->
+  <div class="results-hero">
+    <img
+      src="{{ url_for('static', filename='images/bc_pixelated.png') }}"
+      alt="Boston College"
+      class="results-hero-img"
+    >
+    <div class="results-hero-overlay">
+      <h1 class="results-title">YOUR TOP CLUBS</h1>
+      <p class="results-subtitle">Matching Complete — Welcome to BC</p>
+    </div>
+  </div>
+
+  <!-- Club category sections -->
+  <div class="results-categories">
+    {% for result in results %}
+    <div class="category-section">
+      <h2 class="category-label">
+        {% if loop.index == 1 %}★{% else %}☆{% endif %}
+        {{ result.category }}
+      </h2>
+
+      <div class="club-grid">
+        {% for club in result.clubs %}
+        <div class="club-card">
+          <img
+            src="{{ url_for('static', filename='images/' + club.image) }}"
+            alt="{{ club.name }}"
+          >
+          <p class="club-card-name">{{ club.name }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <!-- Play again -->
+  <div class="results-footer">
+    <a href="/" class="btn-restart">↩ PLAY AGAIN</a>
+  </div>
+
+</div>
+
+{% endblock %}

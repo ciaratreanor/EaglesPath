@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Eagle's Path{% endblock %}
+{% block content %}
+<main class="menu-page">
+
+  <div class="logo-area">
+    <h1 class="game-title">EAGLE'S PATH</h1>
+    <p class="game-subtitle">Boston College Club Finder</p>
+  </div>
+
+  <img
+    src="{{ url_for('static', filename='images/eaglespath.png') }}"
+    alt="Eagle's Path"
+    class="menu-hero"
+  >
+
+  <p class="menu-tagline">Make choices — discover your place at BC.</p>
+
+  <a href="/quiz/0" class="btn-start">▶ PRESS TO PLAY</a>
+
+</main>
+{% endblock %}
